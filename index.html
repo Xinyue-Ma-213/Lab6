@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>My Anime Collection | Home</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar md:navbar-expand bg-1">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="index.html">
+        My Anime Collection
+      </a>
+
+      <button
+        class="btn-icon navbar-toggler"
+        type="button"
+        data-bs-toggle="drawer"
+        data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu"
+        aria-expanded="false"
+        aria-label="Open navigation menu">
+
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+
+      <dialog
+        class="drawer drawer-end"
+        id="navbarMenu"
+        tabindex="-1"
+        aria-labelledby="navbarMenuLabel">
+
+        <div class="drawer-header">
+          <span class="drawer-title" id="navbarMenuLabel">Menu</span>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="drawer"
+            aria-label="Close navigation menu">
+          </button>
+        </div>
+
+        <div class="drawer-body">
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#anime-list">
+                Anime List
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </dialog>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+
+  <header class="mb-4">
+    <h1>My Anime Collection</h1>
+    <p>Six anime series that left a strong impression on me.</p>
+  </header>
+
+  <section aria-labelledby="featured-title">
+    <h2 id="featured-title">Featured Anime</h2>
+
+    <div id="animeCarousel" class="carousel">
+
+      <div class="carousel-inner">
+
+        <article class="carousel-item active">
+          <img
+            src="images/sao.jpg"
+            class="d-block w-100"
+            alt="Sword Art Online promotional artwork">
+
+          <div class="p-3">
+            <h3>Sword Art Online</h3>
+            <p>Enter a virtual world where every battle has real consequences.</p>
+          </div>
+        </article>
+
+        <article class="carousel-item">
+          <img
+            src="images/one-punch-man.jpg"
+            class="d-block w-100"
+            alt="One Punch Man promotional artwork">
+
+          <div class="p-3">
+            <h3>One Punch Man</h3>
+            <p>Discover superhero action with an unexpected sense of humour.</p>
+          </div>
+        </article>
+
+        <article class="carousel-item">
+          <img
+            src="images/air.jpg"
+            class="d-block w-100"
+            alt="AIR anime promotional artwork">
+
+          <div class="p-3">
+            <h3>AIR</h3>
+            <p>Experience an emotional story beneath the summer sky.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="d-flex justify-content-between mt-3">
+
+        <button
+          class="btn-icon"
+          type="button"
+          data-bs-target="#animeCarousel"
+          data-bs-slide="prev"
+          aria-label="Previous slide">
+
+          <span class="carousel-icon-prev" aria-hidden="true"></span>
+        </button>
+
+        <button
+          class="btn-icon"
+          type="button"
+          data-bs-target="#animeCarousel"
+          data-bs-slide="next"
+          aria-label="Next slide">
+
+          <span class="carousel-icon-next" aria-hidden="true"></span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <section
+  id="anime-list"
+  class="mt-5"
+  aria-labelledby="anime-list-title">
+
+  <h2 id="anime-list-title">My Anime List</h2>
+
+  <div class="row g-4">
+ <!-- Sword Art Online -->
+    <div class="col-12 md:col-6 lg:col-4">
+
+      <article class="card h-100">
+
+        <img
+          src="images/sao.jpg"
+          class="card-img-top"
+          alt="Sword Art Online promotional artwork">
+
+        <div class="card-body">
+
+          <h3 class="card-title">Sword Art Online</h3>
+
+          <p class="card-text">
+            A virtual-reality adventure in which players become
+            trapped inside an online game and must fight to survive.
+          </p>
+
+          <details>
+            <summary>Why I recommend it</summary>
+
+            <p>
+              I like its combination of futuristic technology,
+              fantasy worlds, and emotional relationships.
+            </p>
+          </details>
+
+          <button
+            type="button"
+            class="btn-solid theme-primary mt-3"
+            data-bs-toggle="dialog"
+            data-bs-target="#saoDialog">
+
+            Learn More
+          </button>
+
+        </div>
+      </article>
+
+      <dialog
+        class="dialog"
+        id="saoDialog"
+        aria-labelledby="saoDialogTitle">
+
+        <div class="dialog-header">
+
+          <h3 class="dialog-title" id="saoDialogTitle">
+            Sword Art Online
+          </h3>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="dialog"
+            aria-label="Close">
+          </button>
+
+        </div>
+
+        <div class="dialog-body">
+          <p>
+            Sword Art Online explores how virtual worlds can affect
+            real relationships and personal identity.
+          </p>
+        </div>
+
+        <div class="dialog-footer">
+
+          <button
+            type="button"
+            class="btn-solid theme-secondary"
+            data-bs-dismiss="dialog">
+
+            Close
+          </button>
+
+        </div>
+      </dialog>
+
+    </div>
+    <!-- One Piece -->
+    <div class="col-12 md:col-6 lg:col-4">
+
+      <article class="card h-100">
+
+        <img
+          src="images/one-piece.jpg"
+          class="card-img-top"
+          alt="One Piece promotional artwork">
+
+        <div class="card-body">
+
+          <h3 class="card-title">One Piece</h3>
+
+          <p class="card-text">
+             A long-running adventure about Luffy and his crew
+            as they sail across the world in search of a legendary treasure.
+          </p>
+
+          <details>
+            <summary>Why I recommend it</summary>
+
+            <p>
+              I recommend it because its world is imaginative,
+            and every member of the crew has a personal dream.
+            </p>
+          </details>
+
+          <button
+            type="button"
+            class="btn-solid theme-primary mt-3"
+            data-bs-toggle="dialog"
+            data-bs-target="#onePieceDialog">
+
+            Learn More
+          </button>
+
+        </div>
+      </article>
+
+      <dialog
+        class="dialog"
+        id="onePieceDialog"
+        aria-labelledby="onePieceDialogTitle">
+
+        <div class="dialog-header">
+
+          <h3 class="dialog-title" id="onePieceDialogTitle">
+            One Piece
+          </h3>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="dialog"
+            aria-label="Close">
+          </button>
+
+        </div>
+
+        <div class="dialog-body">
+          <p>
+            One Piece is especially memorable for its themes
+            of friendship, freedom, and determination.
+        </p>
+         
+        </div>
+
+        <div class="dialog-footer">
+
+          <button
+            type="button"
+            class="btn-solid theme-secondary"
+            data-bs-dismiss="dialog">
+
+            Close
+          </button>
+
+        </div>
+      </dialog>
+
+    </div>
+  <!-- One Punch Man -->
+    <div class="col-12 md:col-6 lg:col-4">
+
+      <article class="card h-100">
+
+        <img
+          src="images/one-punch-man.jpg"
+          class="card-img-top"
+          alt="One Punch Man promotional artwork">
+
+        <div class="card-body">
+
+          <h3 class="card-title">One Punch Man</h3>
+
+          <p class="card-text">
+            A superhero comedy about Saitama, a hero who can
+            defeat almost every enemy with only one punch.
+          </p>
+
+          <details>
+            <summary>Why I recommend it</summary>
+
+            <p>
+               I enjoy how the series combines exciting battles
+            with humour and makes fun of superhero stories.
+            </p>
+          </details>
+
+          <button
+            type="button"
+            class="btn-solid theme-primary mt-3"
+            data-bs-toggle="dialog"
+            data-bs-target="#onePunchManDialog">
+
+            Learn More
+          </button>
+
+        </div>
+      </article>
+
+      <dialog
+        class="dialog"
+        id="onePunchManDialog"
+        aria-labelledby="onePunchManDialogTitle">
+
+        <div class="dialog-header">
+
+          <h3 class="dialog-title" id="onePunchManDialogTitle">
+            One Punch Man
+          </h3>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="dialog"
+            aria-label="Close">
+          </button>
+
+        </div>
+
+        <div class="dialog-body">
+          <p>
+            Genos is one of my favourite characters because of
+            his mechanical design and determination to become stronger.
+        </p>
+        </div>
+
+        <div class="dialog-footer">
+
+          <button
+            type="button"
+            class="btn-solid theme-secondary"
+            data-bs-dismiss="dialog">
+
+            Close
+          </button>
+
+        </div>
+      </dialog>
+
+    </div>
+  <!-- Saiki K. -->
+    <div class="col-12 md:col-6 lg:col-4">
+
+      <article class="card h-100">
+
+        <img
+          src="images/saiki-k.jpg"
+          class="card-img-top"
+          alt="The Disastrous Life of Saiki K. promotional artwork">
+
+        <div class="card-body">
+
+          <h3 class="card-title">The Disastrous Life of Saiki K.</h3>
+
+          <p class="card-text">
+            A comedy about a high-school student with powerful
+            psychic abilities who only wants to live a quiet life.
+          </p>
+
+          <details>
+            <summary>Why I recommend it</summary>
+
+            <p>
+              I recommend it because the contrast between Saiki's
+            calm personality and his chaotic friends is very funny.
+            </p>
+          </details>
+
+          <button
+            type="button"
+            class="btn-solid theme-primary mt-3"
+            data-bs-toggle="dialog"
+            data-bs-target="#saikiDialog">
+
+            Learn More
+          </button>
+
+        </div>
+      </article>
+
+      <dialog
+        class="dialog"
+        id="saikiDialog"
+        aria-labelledby="saikiDialogTitle">
+
+        <div class="dialog-header">
+
+          <h3 class="dialog-title" id="saikiDialogTitle">
+            The Disastrous Life of Saiki K.
+          </h3>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="dialog"
+            aria-label="Close">
+          </button>
+
+        </div>
+
+        <div class="dialog-body">
+          <p>
+             Saiki K. is easy to watch because its stories are
+            short, fast-paced, and filled with unusual characters.
+          </p>
+        </div>
+
+        <div class="dialog-footer">
+
+          <button
+            type="button"
+            class="btn-solid theme-secondary"
+            data-bs-dismiss="dialog">
+
+            Close
+          </button>
+
+        </div>
+      </dialog>
+
+    </div>
+  <!-- Fate -->
+    <div class="col-12 md:col-6 lg:col-4">
+
+      <article class="card h-100">
+
+        <img
+          src="images/fate.jpg"
+          class="card-img-top"
+          alt="Fate Series promotional artwork">
+
+        <div class="card-body">
+
+          <h3 class="card-title">Fate</h3>
+
+          <p class="card-text">
+            A fantasy series in which powerful Masters summon
+            legendary heroes to compete for the Holy Grail.
+          </p>
+
+          <details>
+            <summary>Why I recommend it</summary>
+
+            <p>
+             I like its combination of historical characters,
+            magic, complex conflicts, and animated battles.
+            </p>
+          </details>
+
+          <button
+            type="button"
+            class="btn-solid theme-primary mt-3"
+            data-bs-toggle="dialog"
+            data-bs-target="#fateDialog">
+
+            Learn More
+          </button>
+
+        </div>
+      </article>
+
+      <dialog
+        class="dialog"
+        id="fateDialog"
+        aria-labelledby="fateDialogTitle">
+
+        <div class="dialog-header">
+
+          <h3 class="dialog-title" id="fateDialogTitle">
+            Fate
+          </h3>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="dialog"
+            aria-label="Close">
+          </button>
+
+        </div>
+
+        <div class="dialog-body">
+          <p>
+            The Fate stories present different versions of the
+            Holy Grail War and give their characters difficult choices.
+          </p>
+        </div>
+
+        <div class="dialog-footer">
+
+          <button
+            type="button"
+            class="btn-solid theme-secondary"
+            data-bs-dismiss="dialog">
+
+            Close
+          </button>
+
+        </div>
+      </dialog>
+
+    </div>
+  <!-- AIR -->
+    <div class="col-12 md:col-6 lg:col-4">
+
+      <article class="card h-100">
+
+        <img
+          src="images/air.jpg"
+          class="card-img-top"
+          alt="AIR anime promotional artwork">
+
+        <div class="card-body">
+
+          <h3 class="card-title">AIR</h3>
+
+          <p class="card-text">
+           An emotional story about a travelling performer
+            who meets a mysterious girl during one summer.
+          </p>
+
+          <details>
+            <summary>Why I recommend it</summary>
+
+            <p>
+             I recommend it because of its peaceful atmosphere
+            and emotional story about memory, family, and separation.
+            </p>
+          </details>
+
+          <button
+            type="button"
+            class="btn-solid theme-primary mt-3"
+            data-bs-toggle="dialog"
+            data-bs-target="#airDialog">
+
+            Learn More
+          </button>
+
+        </div>
+      </article>
+
+      <dialog
+        class="dialog"
+        id="airDialog"
+        aria-labelledby="airDialogTitle">
+
+        <div class="dialog-header">
+
+          <h3 class="dialog-title" id="airDialogTitle">
+            AIR
+          </h3>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="dialog"
+            aria-label="Close">
+          </button>
+
+        </div>
+
+        <div class="dialog-body">
+          <p>
+            The contrast between its bright summer setting
+            and its sad story makes AIR especially memorable.
+          </p>
+        </div>
+
+        <div class="dialog-footer">
+
+          <button
+            type="button"
+            class="btn-solid theme-secondary"
+            data-bs-dismiss="dialog">
+
+            Close
+          </button>
+
+        </div>
+      </dialog>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="container py-4">
+  <hr>
+
+  <p>
+    <small>
+      © 2026 My Anime Collection. Student web development project.
+    </small>
+  </p>
+
+  <p>
+    <small>
+      Anime titles and images belong to their respective copyright holders.
+      This website is a non-commercial student project.
+    </small>
+  </p>
+</footer>
+
+  <script
+    type="module"
+    src="js/bootstrap.bundle.min.js">
+  </script>
+
+</body>
+</html>
