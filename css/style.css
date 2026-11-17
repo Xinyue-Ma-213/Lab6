@@ -1,0 +1,26 @@
+:root {
+  --bs-primary-base: #7c3aed;
+  --bs-primary-bg: #7c3aed;
+  --bs-primary-bg-subtle: #f3e8ff;
+  --bs-primary-fg: #6d28d9;
+  --bs-primary-fg-emphasis: #4c1d95;
+  --bs-primary-border: #c4b5fd;
+  --bs-primary-contrast: #ffffff;
+  --bs-primary-focus-ring: rgb(124 58 237 / 35%);
+}
+body {
+  background-color: #fffafd;
+  color: #251b2e;
+}
+.navbar {
+  background-color: #f3e8ff;
+}
+.btn-solid.theme-primary {
+  background-color: #7c3aed;
+  border-color: #7c3aed;
+  color: #ffffff;
+}
+.btn-solid.theme-primary:hover {
+  background-color: #5b21b6;
+  border-color: #5b21b6;
+}
